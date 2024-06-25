@@ -4,7 +4,7 @@
 
 Redactions were applied using three distinct methods, each with varying levels of sophistication:
 
-1. The first method employed a re-based framework to redact account numbers and emails. The assumption for account numbers was the presence of repetitive patterns of 3 sets of 4 digits separated by hyphens, with arbitrary spaces preceding or following the hyphens. It's important to note that some of these issues may also be attributed to PyPDF2 I/O.
+1.The first method employed a re-based framework to redact account numbers and emails. The assumption for account numbers was the presence of repetitive patterns of 3 sets of 4 digits separated by hyphens, with arbitrary spaces preceding or following the hyphens. It's important to note that some of these issues may also be attributed to PyPDF2 I/O.
 
 2. The second method involved leveraging BERT for the detection of usernames and passwords. The approach reframed the task as a question-answering (QA) problem, with the text containing the terms "username" or "password" acting as the passage. This method adds a layer of sophistication to the redaction process.
 
